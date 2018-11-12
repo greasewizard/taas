@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to Time-As-A-Service!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to Time-as-a-Service!</h1>
+
+<p id="date"></p>
+<script>
+    n =  new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    h = n.getHours();
+    mn = n.getMinutes();
+    s = n.getSeconds();
+    document.getElementById("date").innerHTML = m + "/" + d + "/" + y + " "+ h + ":" + mn + ":" + s;
+</script>
+
+<p><em>Thank you for using TaaS.</em></p>
+</body>
+</html>
